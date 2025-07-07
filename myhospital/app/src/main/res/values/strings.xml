@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">myhospital</string>
+    <string name="background_image_desc">Gambar latar belakang halaman utama</string>
+    <string name="welcome_icon_desc">Ikon selamat datang</string>
+</resources>

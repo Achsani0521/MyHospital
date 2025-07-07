@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardMedicine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/ivMedicineImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_image_background" android:contentDescription="Medicine Image"
+            tools:src="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/tvMedicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginBottom="4dp"
+            tools:text="Paracetamol 500mg"/>
+
+        <TextView
+            android:id="@+id/tvMedicinePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_blue_700"
+            android:layout_marginBottom="8dp"
+            tools:text="Rp 15.000"/>
+
+        <TextView
+            android:id="@+id/tvMedicineDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center_horizontal"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginBottom="8dp"
+            tools:text="Obat penurun panas dan pereda nyeri untuk dewasa dan anak-anak."/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beli Sekarang"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/md_blue_500"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

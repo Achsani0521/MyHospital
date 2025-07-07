@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservasi Pemeriksaan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/md_blue_700" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Pilih Poli"
+        android:textColor="#333333" />
+
+    <Spinner
+        android:id="@+id/spinnerPoli"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Keluhan"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/etKeluhan"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="top|start"
+        android:hint="Silakan isi keluhan..."
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnSimpanReservasi"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Dapatkan Nomor Antrian"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/md_blue_700"
+        android:drawablePadding="8dp" />
+</LinearLayout>
